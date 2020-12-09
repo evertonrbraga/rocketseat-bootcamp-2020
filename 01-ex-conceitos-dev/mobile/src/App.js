@@ -84,6 +84,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#7159c1',
   },
+
   repositoryContainer: {
     marginBottom: 15,
     marginHorizontal: 15,
