@@ -1,10 +1,11 @@
 {
     "env": {
         "es2021": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": [
-        "standard"
+        "airbnb-base"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -15,5 +16,13 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "class-methods-use-this": "off",
+      "no-unused-vars": "off"
+    },
+    "settings": {
+        "import/resolver": {
+          "typescript": {} 
+        }
     }
 }
+
