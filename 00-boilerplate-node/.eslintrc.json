@@ -5,7 +5,10 @@
         "jest": true
     },
     "extends": [
-        "airbnb-base"
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -13,11 +16,13 @@
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
       "class-methods-use-this": "off",
-      "no-unused-vars": "off"
+      "no-unused-vars": "off",
+      "prettier/prettier": "error"
     },
     "settings": {
         "import/resolver": {
@@ -25,4 +30,3 @@
         }
     }
 }
-

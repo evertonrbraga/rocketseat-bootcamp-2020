@@ -4,9 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-require("@controllers/UserController");
+const routes_1 = __importDefault(require("./routes"));
 const app = express_1.default();
-app.get('/', (request, response) => {
-    return response.json({ message: 'Hello World' });
+app.use(routes_1.default);
+app.listen(3333, () => {
+    console.log('🧠 Server started on port 3333!');
 });
-app.listen(3333);
