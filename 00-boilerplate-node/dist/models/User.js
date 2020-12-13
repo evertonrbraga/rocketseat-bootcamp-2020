@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.User = void 0;
 
 class User {}
 
-exports.default = User;
+exports.User = User;
